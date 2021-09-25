@@ -89,9 +89,7 @@
            -Dlogging.config=classpath:logback-api.xml -Dspring.profiles.active=api
            ```
 
-     11.   如果需要用到日志功能，执行 org.apache.dolphinscheduler.server.log.LoggerServer 的 main 方法。
-
-     12.   后端 swagger 地址 ：http://localhost:12345/dolphinscheduler/doc.html?language=zh_CN&lang=cn
+     11.   后端 swagger 地址 ：http://localhost:12345/dolphinscheduler/doc.html?language=zh_CN&lang=cn
 
 4.   **搭建前端环境** 
 

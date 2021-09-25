@@ -133,8 +133,6 @@ elif [ "$command" = "worker-server" ]; then
 elif [ "$command" = "alert-server" ]; then
   LOG_FILE="-Dlogback.configurationFile=conf/logback-alert.xml"
   CLASS=org.apache.dolphinscheduler.alert.AlertServer
-elif [ "$command" = "logger-server" ]; then
-  CLASS=org.apache.dolphinscheduler.server.log.LoggerServer
 else
   echo "Error: No command named '$command' was found."
   exit 1

@@ -95,9 +95,7 @@ Run the main method of org.apache.dolphinscheduler.api.ApiApplicationServer. You
 -Dlogging.config=classpath:logback-api.xml -Dspring.profiles.active=api
 ```
 
-xi. If you need to use the log function, execute the main method of org.apache.dolphinscheduler.server.log.LoggerServer.
-
-xii. Backend swagger address: http://localhost:12345/dolphinscheduler/doc.html?language=zh_CN&lang=cn
+xi. Backend swagger address: http://localhost:12345/dolphinscheduler/doc.html?language=zh_CN&lang=cn
 
 #### 4. Set up the front-end
 

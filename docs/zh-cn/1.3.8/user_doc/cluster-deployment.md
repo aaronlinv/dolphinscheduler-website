@@ -307,12 +307,11 @@ sh install.sh
 sh: bin/dolphinscheduler-daemon.sh: No such file or directory
 ```
 
-- 脚本完成后，会启动以下 5 个服务，使用 `jps` 命令查看服务是否启动( `jps` 为 `JDK` 自带)
+- 脚本完成后，会启动以下 4 个服务，使用 `jps` 命令查看服务是否启动( `jps` 为 `JDK` 自带)
 
 ```aidl
     MasterServer         ----- master服务
     WorkerServer         ----- worker服务
-    LoggerServer         ----- logger服务
     ApiApplicationServer ----- api服务
     AlertServer          ----- alert服务
 ```
@@ -327,7 +326,6 @@ sh: bin/dolphinscheduler-daemon.sh: No such file or directory
     ├── dolphinscheduler-master-server.log
     |—— dolphinscheduler-worker-server.log
     |—— dolphinscheduler-api-server.log
-    |—— dolphinscheduler-logger-server.log
 ```
 
 # 8、登录系统
@@ -374,13 +372,6 @@ sh ./bin/dolphinscheduler-daemon.sh stop worker-server
 ```shell
 sh ./bin/dolphinscheduler-daemon.sh start api-server
 sh ./bin/dolphinscheduler-daemon.sh stop api-server
-```
-
-* 启停 Logger
-
-```shell
-sh ./bin/dolphinscheduler-daemon.sh start logger-server
-sh ./bin/dolphinscheduler-daemon.sh stop logger-server
 ```
 
 * 启停 Alert

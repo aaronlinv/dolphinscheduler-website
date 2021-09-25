@@ -271,7 +271,6 @@ mysql -uroot -p
 ```aidl
     MasterServer         ----- master service
     WorkerServer         ----- worker service
-    LoggerServer         ----- logger service
     ApiApplicationServer ----- api service
     AlertServer          ----- alert service
 ```
@@ -285,7 +284,6 @@ After the deployment is success, you can view logs. Logs stored in the logs fold
     ├── dolphinscheduler-master-server.log
     |—— dolphinscheduler-worker-server.log
     |—— dolphinscheduler-api-server.log
-    |—— dolphinscheduler-logger-server.log
 ```
 
 # 8、login
@@ -326,13 +324,6 @@ sh ./bin/dolphinscheduler-daemon.sh stop worker-server
 ```shell
 sh ./bin/dolphinscheduler-daemon.sh start api-server
 sh ./bin/dolphinscheduler-daemon.sh stop api-server
-```
-
-* Start and stop logger Service
-
-```shell
-sh ./bin/dolphinscheduler-daemon.sh start logger-server
-sh ./bin/dolphinscheduler-daemon.sh stop logger-server
 ```
 
 * Start and stop alert service

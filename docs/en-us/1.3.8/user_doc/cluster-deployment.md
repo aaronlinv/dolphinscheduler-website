@@ -326,7 +326,6 @@ mysql -h192.168.xx.xx -P3306 -uroot -p
 ```aidl
     MasterServer         ----- master service
     WorkerServer         ----- worker service
-    LoggerServer         ----- logger service
     ApiApplicationServer ----- api service
     AlertServer          ----- alert service
 ```
@@ -341,7 +340,6 @@ After the deployment is successful, you can view the logs. The logs are stored i
     ├── dolphinscheduler-master-server.log
     |—— dolphinscheduler-worker-server.log
     |—— dolphinscheduler-api-server.log
-    |—— dolphinscheduler-logger-server.log
 ```
 
 
@@ -386,13 +384,6 @@ sh ./bin/dolphinscheduler-daemon.sh stop worker-server
 ```shell
 sh ./bin/dolphinscheduler-daemon.sh start api-server
 sh ./bin/dolphinscheduler-daemon.sh stop api-server
-```
-
-* Start and stop logger Service
-
-```shell
-sh ./bin/dolphinscheduler-daemon.sh start logger-server
-sh ./bin/dolphinscheduler-daemon.sh stop logger-server
 ```
 
 * Start and stop alert service
