@@ -126,7 +126,7 @@ dolphinscheduler-service/src/main/resources/registry.properties</p>
 <p><strong><em>Note:</em></strong> Only DolphinScheduler 2.0 and later versions need to inatall plugin before start server. It not need before version 2.0.</p>
 </blockquote>
 <h5>Server start</h5>
-<p>There are three services that need to be started, including MasterServer, WorkerServer, ApiApplicationServer.LoggerServer is already integrated into the MasterServer and WorkerServer, so there is no need to start them independently.</p>
+<p>There are three services that need to be started, including MasterServer, WorkerServer, ApiApplicationServer.</p>
 <ul>
 <li>MasterServer：Execute function <code>main</code> in the class <code>org.apache.dolphinscheduler.server.master.MasterServer</code> by Intellij IDEA, with the configuration <em>VM Options</em> <code>-Dlogging.config=classpath:logback-master.xml -Ddruid.mysql.usePingMethod=false -Dspring.profiles.active=mysql</code></li>
 <li>WorkerServer：Execute function <code>main</code> in the class <code>org.apache.dolphinscheduler.server.worker.WorkerServer</code> by Intellij IDEA, with the configuration <em>VM Options</em> <code>-Dlogging.config=classpath:logback-worker.xml -Ddruid.mysql.usePingMethod=false -Dspring.profiles.active=mysql</code></li>
