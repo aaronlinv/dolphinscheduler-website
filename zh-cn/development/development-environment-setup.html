@@ -119,7 +119,7 @@ dolphinscheduler-service/src/main/resources/registry.properties</li>
 </li>
 </ul>
 <h5>启动服务</h5>
-<p>我们需要启动三个服务，包括 MasterServer，WorkerServer，ApiApplicationServer，LoggerServer 已经被整合进了 MasterServer 和 WorkerServer，所以无需独立启动</p>
+<p>我们需要启动三个服务，包括 MasterServer，WorkerServer，ApiApplicationServer</p>
 <ul>
 <li>MasterServer：在 Intellij IDEA 中执行 <code>org.apache.dolphinscheduler.server.master.MasterServer</code> 中的 <code>main</code> 方法，并配置 <em>VM Options</em> <code>-Dlogging.config=classpath:logback-master.xml -Ddruid.mysql.usePingMethod=false -Dspring.profiles.active=mysql</code></li>
 <li>WorkerServer：在 Intellij IDEA 中执行 <code>org.apache.dolphinscheduler.server.worker.WorkerServer</code> 中的 <code>main</code> 方法，并配置 <em>VM Options</em> <code>-Dlogging.config=classpath:logback-worker.xml -Ddruid.mysql.usePingMethod=false -Dspring.profiles.active=mysql</code></li>
